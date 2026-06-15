@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ניהול מוצרים - שירן יד שנייה</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">שירן יד שנייה - ניהול</div>
+
+  <nav>
+    <a href="index.html">חזרה לאתר</a>
+  </nav>
+</header>
+
+<section class="contact">
+
+  <h2>הוספת מוצר חדש</h2>
+
+  <form id="productForm">
+
+    <input
+      type="text"
+      id="name"
+      placeholder="שם המוצר"
+      required
+    >
+
+    <input
+      type="number"
+      id="price"
+      placeholder="מחיר"
+      required
+    >
+
+    <textarea
+      id="description"
+      placeholder="תיאור המוצר"
+      required
+    ></textarea>
+
+    <input
+      type="file"
+      id="image"
+      accept="image/*"
+      required
+    >
+
+    <button type="submit">
+      הוסף מוצר
+    </button>
+
+  </form>
+
+  <p id="message"></p>
+
+</section>
+
+<footer>
+  <p>© 2026 שירן יד שנייה</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>שירן יד שנייה</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">שירן יד שנייה</div>
+  <nav>
+    <a href="#home">בית</a>
+    <a href="#about">על האתר</a>
+    <a href="#products">מוצרים</a>
+    <a href="#contact">צור קשר</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>מוצרים איכותיים במחירים מעולים</h1>
+  <p>
+    אתר יד שנייה חברתי, נעים ונגיש, המעודד קיימות,
+    שמירה על איכות הסביבה וצרכנות חכמה.
+  </p>
+  <a href="#products" class="btn">לצפייה במוצרים</a>
+</section>
+
+<section class="about" id="about">
+  <h2>על האתר</h2>
+  <p>
+    באתר ניתן למצוא פריטים איכותיים יד שנייה במחירים מעולים.
+    המטרה היא לתת למוצרים חיים חדשים, לחסוך כסף ולעודד שימוש חוזר.
+  </p>
+  <p>
+    האתר שם דגש על קיימות, איכות הסביבה, צרכנות חברתית וחיבור בין אנשים.
+  </p>
+</section>
+
+<section class="values">
+  <div class="value-card">
+    <h3>איכות</h3>
+    <p>מוצרים טובים, שימושיים ושמורים.</p>
+  </div>
+  <div class="value-card">
+    <h3>מחיר מעולה</h3>
+    <p>קנייה חכמה במחירים משתלמים.</p>
+  </div>
+  <div class="value-card">
+    <h3>קיימות</h3>
+    <p>פחות בזבוז ויותר שמירה על הסביבה.</p>
+  </div>
+  <div class="value-card">
+    <h3>חברתי</h3>
+    <p>קהילה שמחברת בין אנשים ופריטים.</p>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <h2>מוצרים לדוגמה</h2>
+
+  <input type="text" id="searchInput" placeholder="חיפוש מוצר...">
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x220/FAF8F5/5B4A42?text=ספה" alt="ספה">
+      <h3>ספה יד שנייה</h3>
+      <p>ספה נוחה ואיכותית במצב טוב.</p>
+      <span>₪500</span>
+      <a class="small-btn" href="https://wa.me/972509456209" target="_blank">צור קשר</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x220/EBC9C4/5B4A42?text=שולחן" alt="שולחן">
+      <h3>שולחן עץ</h3>
+      <p>שולחן יפה לבית או למשרד.</p>
+      <span>₪300</span>
+      <a class="small-btn" href="https://wa.me/972509456209" target="_blank">צור קשר</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x220/E8DCCF/5B4A42?text=מנורה" alt="מנורה">
+      <h3>מנורת עיצוב</h3>
+      <p>מנורה עדינה ומעוצבת לבית.</p>
+      <span>₪120</span>
+      <a class="small-btn" href="https://wa.me/972509456209" target="_blank">צור קשר</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>צור קשר</h2>
+
+  <p><strong>שם:</strong> שירן יונאי אליהו</p>
+  <p><strong>טלפון:</strong> 050-945-6209</p>
+  <p><strong>אזור פעילות:</strong> מרכז הארץ</p>
+  <p><strong>אימייל:</strong> shiran.y.e.mail.27@gmail.com</p>
+
+  <a class="whatsapp-btn" href="https://wa.me/972509456209" target="_blank">
+    יצירת קשר ב-WhatsApp
+  </a>
+
+  <form>
+    <input type="text" placeholder="שם מלא" required>
+    <input type="email" placeholder="אימייל" required>
+    <textarea placeholder="כתוב הודעה..." required></textarea>
+    <button type="submit">שליחת הודעה</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 שירן יד שנייה | קנייה חכמה, חברתית וירוקה</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
