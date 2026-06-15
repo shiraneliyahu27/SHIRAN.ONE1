@@ -1,0 +1,224 @@
+:root {
+  --cream: #FAF8F5;
+  --beige: #E8DCCF;
+  --pink: #EBC9C4;
+  --gold: #D4AF7A;
+  --dark: #5B4A42;
+  --gray: #8A817C;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+}
+
+header {
+  background: var(--white);
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--gold);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 12px;
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.hero {
+  padding: 90px 10%;
+  text-align: center;
+  background: linear-gradient(135deg, var(--cream), var(--pink));
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 720px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.btn,
+button,
+.small-btn,
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--gold);
+  color: white;
+  padding: 13px 28px;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover,
+button:hover,
+.small-btn:hover {
+  background: #c69a5f;
+}
+
+section {
+  padding: 60px 10%;
+}
+
+.about {
+  background: var(--white);
+  text-align: center;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 15px auto;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  border: 1px solid var(--beige);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.products {
+  text-align: center;
+}
+
+#searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 14px;
+  border: 1px solid var(--beige);
+  border-radius: 30px;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.product-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.product-card span {
+  display: block;
+  font-size: 22px;
+  color: var(--gold);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.small-btn {
+  padding: 10px 22px;
+}
+
+.contact {
+  background: var(--white);
+  text-align: center;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+form {
+  max-width: 500px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 14px;
+  border: 1px solid var(--beige);
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+form textarea {
+  min-height: 120px;
+}
+
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+
+  .values,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+}
